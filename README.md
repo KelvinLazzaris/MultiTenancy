@@ -6,7 +6,7 @@ Configuração:
 
 - Clone o repositório em sua máquina local.
 - Instale o Node.js e npm em seu ambiente de desenvolvimento.
-- Instale as dependências. (npm intall)
+- Instale as dependências. (npm install)
 - Instale o MySQL
 - Edite o arquivo config/db.js com suas informações de conexão.
 
