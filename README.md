@@ -1,35 +1,21 @@
-Sistema de Gerenciamento de Tenants
+Sistema de Gerenciamento de Tenants com Multi-Tenancy
+Este projeto oferece um sistema robusto para gestão de múltiplos tenants em uma única aplicação, ideal para arquiteturas SaaS (Software as a Service) que exigem isolamento seguro e eficiente de dados para diferentes clientes.
 
-Este sistema permite a gestão de múltiplos tenants em uma única aplicação. Guia para usá-lo:.
+Principais Funcionalidades:
+Gerenciamento Completo de Tenants: Inclui operações CRUD completas, permitindo criar, listar, atualizar e excluir tenants facilmente.
+Endpoints Simples e Eficientes: Com uma estrutura de API RESTful, possibilita interações claras com o sistema usando HTTP para operações de gerenciamento.
+Configuração Personalizável: Configure rapidamente sua conexão de banco de dados e inicie a aplicação localmente.
+Passo a Passo de Configuração:
+Clone este repositório.
+Instale Node.js, npm, e MySQL.
+Configure o banco de dados e as informações de conexão no arquivo config/db.js.
+Instale as dependências do projeto com npm install.
+Como Usar:
+Inicie o servidor com node app.js, e utilize ferramentas como Postman para enviar requisições HTTP aos endpoints:
 
-Configuração:
-
-- Clone o repositório em sua máquina local.
-- Instale o Node.js e npm em seu ambiente de desenvolvimento.
-- Instale as dependências. (npm install)
-- Instale o MySQL
-- Edite o arquivo config/db.js com suas informações de conexão.
-
-Inicialização do Servidor:
-Após configurar o banco de dados, inicie o servidor:
-
-- node app.js (O servidor estará pronto para aceitar solicitações).
-
-Operações CRUD
-O sistema permite as seguintes operações:
-
-Criar Tenant: Crie um novo tenant.
-Listar Tenants: Obtenha uma lista de todos os tenants.
-Obter Tenant por ID: Detalhes de um tenant específico.
-Atualizar Tenant: Atualize um tenant existente.
-Excluir Tenant: Exclua um tenant existente.
-Use ferramentas como Postman para enviar requisições HTTP para os endpoints.
-
-Endpoints
 Criar Tenant: POST /api/tenants
-Listar Todos os Tenants: GET /api/tenants
+Listar Tenants: GET /api/tenants
 Obter Tenant por ID: GET /api/tenants/:id
 Atualizar Tenant: PUT /api/tenants/:id
 Excluir Tenant: DELETE /api/tenants/:id
-Certifique-se de usar o cabeçalho Content-Type: application/json nas requisições.
-
+Certifique-se de enviar as requisições com o cabeçalho Content-Type: application/json.
